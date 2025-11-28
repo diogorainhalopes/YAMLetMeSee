@@ -47,39 +47,3 @@ The extension provides the following settings:
   "yamletmesee.activeOpacity": 0.5
 }
 ```
-
-## Development
-
-### Prerequisites
-
-- Node.js
-- npm or yarn
-- Visual Studio Code
-
-### Setup
-
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-2. Compile the TypeScript code:
-   ```bash
-   npm run compile
-   ```
-
-3. Press `F5` in VS Code to open a new Extension Development Host window
-
-4. Open a YAML file in the new window to see the extension in action
-
-### Building
-
-```bash
-npm run compile
-```
-
-### Watch Mode
-
-```bash
-npm run watch
-```
