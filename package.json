@@ -1,0 +1,83 @@
+{
+  "name": "yamletmesee",
+  "displayName": "YAMLetMeSee",
+  "description": "Highlight indentation in YAML files to make it easier to track nested structures",
+  "version": "0.0.1",
+  "publisher": "YOUR_PUBLISHER_NAME",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "yaml",
+    "indentation",
+    "highlight",
+    "visual",
+    "guide",
+    "nested"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/YAMLetMeSee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/YAMLetMeSee/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/YAMLetMeSee#readme",
+  "activationEvents": [
+    "onLanguage:yaml"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "YAMLetMeSee",
+      "properties": {
+        "yamletmesee.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable indentation highlighting for YAML files"
+        },
+        "yamletmesee.indentationColors": {
+          "type": "array",
+          "default": [
+            "#ff0000",
+            "#ff8000",
+            "#ffff00",
+            "#00ff00",
+            "#0080ff",
+            "#8000ff"
+          ],
+          "description": "Colors for different indentation levels (hex format). Each level shows as a thin vertical colored line."
+        },
+        "yamletmesee.inactiveOpacity": {
+          "type": "number",
+          "default": 0.08,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Opacity for inactive (non-highlighted) indentation guides (0-1)"
+        },
+        "yamletmesee.activeOpacity": {
+          "type": "number",
+          "default": 0.4,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Opacity for active (highlighted) indentation guides when cursor is on that block (0-1)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
+
