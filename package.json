@@ -3,7 +3,7 @@
   "displayName": "YAMLetMeSee",
   "description": "Highlight indentation in YAML files to make it easier to track nested structures",
   "version": "0.0.1",
-  "publisher": "YOUR_PUBLISHER_NAME",
+  "publisher": "DiogoLopes",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/YAMLetMeSee.git"
+    "url": "https://github.com/diogorainhalopes/YAMLetMeSee.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/YAMLetMeSee/issues"
+    "url": "https://github.com/diogorainhalopes/YAMLetMeSee/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/YAMLetMeSee#readme",
+  "homepage": "https://github.com/diogorainhalopes/YAMLetMeSee#readme",
   "activationEvents": [
     "onLanguage:yaml"
   ],
