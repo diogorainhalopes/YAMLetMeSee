@@ -2,7 +2,7 @@
   "name": "yamletmesee",
   "displayName": "YAMLetMeSee",
   "description": "Highlight indentation in YAML files to make it easier to track nested structures",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "DiogoLopes",
   "engines": {
     "vscode": "^1.74.0"

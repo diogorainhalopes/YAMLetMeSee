@@ -24,6 +24,7 @@ The extension provides the following settings:
 | `yamletmesee.indentationColors` | array | See below | Colors for each indentation level (hex format) |
 | `yamletmesee.inactiveOpacity` | number | `0.08` | Opacity for inactive guides (0-1) |
 | `yamletmesee.activeOpacity` | number | `0.4` | Opacity for active/highlighted guides (0-1) |
+| `yamletmesee.spacesPerIndent` | number | `1` | Number of spaces to color for each indentation level (minimum: 1) |
 
 ### Default Colors (Rainbow)
 
@@ -44,6 +45,7 @@ The extension provides the following settings:
     "#ffff00"
   ],
   "yamletmesee.inactiveOpacity": 0.1,
-  "yamletmesee.activeOpacity": 0.5
+  "yamletmesee.activeOpacity": 0.5,
+  "yamletmesee.spacesPerIndent": 2
 }
 ```
