@@ -65,6 +65,12 @@
           "minimum": 0,
           "maximum": 1,
           "description": "Opacity for active (highlighted) indentation guides when cursor is on that block (0-1)"
+        },
+        "yamletmesee.spacesPerIndent": {
+          "type": "number",
+          "default": 1,
+          "minimum": 1,
+          "description": "Number of spaces to color for each indentation level. For example, 2 would color 2 spaces for each indentation level."
         }
       }
     }

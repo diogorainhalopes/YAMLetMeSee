@@ -142,9 +142,10 @@ export function activate(context: vscode.ExtensionContext) {
         ]);
         const inactiveOpacity = config.get<number>('inactiveOpacity', 0.08);
         const activeOpacity = config.get<number>('activeOpacity', 0.4);
+        const spacesPerIndent = config.get<number>('spacesPerIndent', 1);
 
         // Only recreate decoration types if colors or opacity changed
-        const configHash = JSON.stringify({ colors, inactiveOpacity, activeOpacity });
+        const configHash = JSON.stringify({ colors, inactiveOpacity, activeOpacity, spacesPerIndent });
         if (configHash !== lastColorsHash) {
             disposeAllDecorations();
             lastColorsHash = configHash;
@@ -229,7 +230,7 @@ export function activate(context: vscode.ExtensionContext) {
                     // Add ranges from first child to end of block (skip the parent line itself)
                     // The parent line's content starts at col, so we don't want to overlap it
                     for (let k = i + 1; k <= blockEnd; k++) {
-                        ranges.push(new vscode.Range(k, col, k, col + 1));
+                        ranges.push(new vscode.Range(k, col, k, col + spacesPerIndent));
                     }
                 }
             }
